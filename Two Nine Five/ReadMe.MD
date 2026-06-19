@@ -1,7 +1,7 @@
 **I'm leaving the original Readme unchanged below my adaptations, to link back to the original creator - give him some love!**
 
 ## Change 1: tuning of 1.4k
-TLDR; My change is extremely simple - exchange R34 from 15k to 18k.
+TLDR; My change is extremely simple - change R34 from 15k to 18k.
 
 ### Explanation for adaptation
 I noticed, that when tuning the 1.4k band I could not get the gain down to 6.5dB - the lowest position of Q trimmer achieved something akin to 6.7dB. I scratched my head for about a week searching for errors in my build, when I decided to simulate each band in LTSpice. Lo and behold - the 1.4k band with Q trimmer set to 1 Ohm and frequency pot trimmed so that the peak is at exactly 1.4k, and that gave around 6.7dB - as measured at my builds. It all stems from the fact, that the Q and freq trimmers are interacting with each other quite heavily.
