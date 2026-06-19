@@ -4,7 +4,7 @@
 TLDR; My change is extremely simple - exchange R34 from 15k to 18k.
 
 ### Explanation for adaptation
-I noticed, that when tuning the 1.4k band I could not get the gain down to 6.5dB - the lowest position of Q trimmer achieved something akin to 6.7dB. I scratched my head for about a week searching for errors in my build, when I decided to simulate each band in LTSpice. Lo and behold - the 1.4k band with Q trimmer set to 1 Ohm and frequency pot trimmed so that the peak is at exactly 1.4k gave around 6.7dB - as measured. It all stems from the fact, that the Q and freq trimmers are interacting with each other quite heavily.
+I noticed, that when tuning the 1.4k band I could not get the gain down to 6.5dB - the lowest position of Q trimmer achieved something akin to 6.7dB. I scratched my head for about a week searching for errors in my build, when I decided to simulate each band in LTSpice. Lo and behold - the 1.4k band with Q trimmer set to 1 Ohm and frequency pot trimmed so that the peak is at exactly 1.4k, and that gave around 6.7dB - as measured at my builds. It all stems from the fact, that the Q and freq trimmers are interacting with each other quite heavily.
 Next step was preparing a tool to help finding the correct value - Copilot came to the rescue and gave me a Python script that is capable of just that. I'll leave it in the repository as well in Simulator directory. I searched for a minimal change of components, that could give me at most 6dB, preferrably 5.5dB, of gain at minimum Q position, with center frequency tuned to 1.4k. It turns out, that just bumping the R34 resistor from 15k to 18k does the trick nicely.
 I replaced the resistor, calibrated the module once more and all was well :)
 
