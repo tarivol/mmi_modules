@@ -8,6 +8,7 @@ Fork of repository with MMI Modular eurorack module designs.
 Designs I have changed:
 
 1. Two Nine Five - change of components in 1.4k band, resulting in better ability to calibrate 6.5dB gain
+2. Two Nine Five - added Gerber files for a basic front panel
 
 Each directory has its own ReadMe with information on each module
 
